@@ -19,16 +19,16 @@ st.markdown("""
     </style>
     
 """, unsafe_allow_html=True)
-# with st.sidebar:
-#             # Custom navigation links
+with st.sidebar:
+            # Custom navigation links
             
-#             st.page_link("pages/overview.py", label="Overview", icon=":material/home:")
-#             st.page_link("pages/sales_interaction_page.py", label="Sales & Interaction", icon=":material/analytics:")
-#             st.page_link("pages/raw_data_page.py", label="Raw Data", icon=":material/database:")
-            
+            # st.page_link("pages/overview.py", label="Overview", icon=":material/home:")
+            # st.page_link("pages/sales_interaction_page.py", label="Sales & Interaction", icon=":material/analytics:")
+            # st.page_link("pages/raw_data_page.py", label="Raw Data", icon=":material/database:")
+            st.page_link("upload.py", label="Upload Data", icon=":material/upload:")
 
 
-#             st.markdown("---")  # Separator
+            st.markdown("---")  # Separator
 
 st.title("Welcome to the Dashboard!")
 st.subheader("Please upload your web data logs in CSV format to proceed.")
