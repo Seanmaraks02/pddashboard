@@ -45,6 +45,8 @@ def get_uploaded_data():
         return st.session_state["uploaded_data"].copy()
     else:
         st.warning("Please upload data on the 'Upload Data' page first.")
+        st.page_link("upload.py", label="Upload Data", icon=":material/upload:")
+        
         return None
 
 df = get_uploaded_data()
